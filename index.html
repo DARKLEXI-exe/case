@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case #IMPA-001 — Apology to Impa</title>
+  <meta name="description" content="A mini apology website for Impa.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Ambient Particles Container -->
+  <div id="ambient-particles" aria-hidden="true"></div>
+
+  <!-- Subtle Desktop Custom Cursor -->
+  <div id="custom-cursor" aria-hidden="true"></div>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader-overlay" role="status" aria-live="polite">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">DECRYPTING NOTIFICATION LOGS...</div>
+      <div class="loader-sub">Target: Impa 🕵️</div>
+    </div>
+  </div>
+
+  <!-- Header Nav -->
+  <header class="top-nav">
+    <div class="nav-container">
+      <div class="status-badge" aria-label="Investigation Status">
+        <span class="status-dot"></span>
+        <span class="status-text">STATUS: ACTIVE INVESTIGATION 🕵️</span>
+      </div>
+      <button id="sound-toggle" class="sound-toggle-btn" aria-label="Toggle sound feedback" title="Toggle click sounds">
+        <span class="sound-icon">🔇</span> Sound: Off
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- SCREEN 1: HERO -->
+    <section id="hero" class="section hero-section">
+      <div class="section-container">
+        <div class="case-header-badge">CASE FILE #IMPA-001 · INVESTIGATION LOG</div>
+        <h1 class="hero-title">Impa… okay okay 😭</h1>
+        <p class="hero-subtitle">Before you start checking my notifications again… hear me out. 👀</p>
+        
+        <div class="hero-action">
+          <button id="hero-cta" class="btn btn-primary btn-glow">
+            <span>Click before judging me 😭</span>
+            <svg class="arrow-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+          </button>
+        </div>
+
+        <!-- Floating Notification Card -->
+        <div class="hero-notification-card glass-card">
+          <div class="notif-header">
+            <span class="notif-icon">📱</span>
+            <span class="notif-title">Notification Investigation</span>
+            <span class="notif-time">Just now</span>
+          </div>
+          <div class="notif-body">
+            <div class="notif-status-pill">Status: Extremely suspicious 👀</div>
+            <div class="notif-meta">
+              <span><strong>Suspect:</strong> Under Investigation</span>
+              <span><strong>Detective:</strong> Impa 🕵️</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 2: THE ACTUAL PROBLEM -->
+    <section id="problem" class="section reveal-section">
+      <div class="section-container">
+        <div class="section-badge">STATEMENT OF FACTS</div>
+        <h2 class="section-title">Okay… I should explain this properly 😭</h2>
+        
+        <div class="apology-main-card glass-card">
+          <p class="apology-paragraph">That day, a guy came into my room while I was doing what I was doing, so I got distracted with everything happening.</p>
+          <p class="apology-paragraph">Then the next day your call came and somehow telling you about it / replying about it just didn't remain in my mind.</p>
+          <p class="apology-paragraph">I wasn't ignoring you and I wasn't trying to hide anything from you.</p>
+          <p class="apology-paragraph">But I know from your side it probably looked completely different, especially when you were checking my notifications like a detective 🕵️😭</p>
+          <p class="apology-paragraph highlight-text">I should've just told you properly. So yeah… I'm sorry 🥲</p>
+        </div>
+
+        <div class="investigation-status-card glass-card">
+          <div class="investigation-card-header">
+            <span class="icon">📱</span>
+            <span class="title">NOTIFICATION INVESTIGATION</span>
+            <span class="badge active-badge">Status: ACTIVE 🕵️</span>
+          </div>
+          <div class="investigation-details">
+            <div class="detail-row">
+              <span class="label">Reason:</span>
+              <span class="value">"Guy came into room → Got distracted → Next day call happened → Replying slipped from mind."</span>
+            </div>
+            <div class="detail-row">
+              <span class="label">Evidence:</span>
+              <span class="value">"Suspicious notification silence & active FBI-level snooping 👀"</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 3: CASE FILE -->
+    <section id="case-file" class="section reveal-section">
+      <div class="section-container">
+        <div class="section-badge">EVIDENCE LOG</div>
+        <h2 class="section-title">CASE FILE #IMPA-001 🕵️</h2>
+        <p class="section-subtitle">Let's review the actual evidence.</p>
+
+        <div class="evidence-grid" id="evidence-grid">
+          <div class="evidence-card glass-card">
+            <span class="evidence-icon fail-icon">❌</span>
+            <span class="evidence-text">Got distracted when someone came into the room</span>
+          </div>
+          <div class="evidence-card glass-card">
+            <span class="evidence-icon fail-icon">❌</span>
+            <span class="evidence-text">Didn't properly follow up the next day</span>
+          </div>
+          <div class="evidence-card glass-card">
+            <span class="evidence-icon fail-icon">❌</span>
+            <span class="evidence-text">Let the reply completely slip from my mind</span>
+          </div>
+          <div class="evidence-card glass-card">
+            <span class="evidence-icon fail-icon">❌</span>
+            <span class="evidence-text">Accidentally activated Impa Investigation Mode 🕵️</span>
+          </div>
+          <div class="evidence-card glass-card pass-card">
+            <span class="evidence-icon pass-icon">✅</span>
+            <span class="evidence-text">Wasn't intentionally ignoring or hiding anything</span>
+          </div>
+        </div>
+
+        <div class="admit-container">
+          <button id="admit-btn" class="btn btn-secondary">
+            Okay I admit it 😭
+          </button>
+          
+          <div id="admit-response" class="admit-response-box glass-card hidden" aria-live="polite">
+            <p class="admit-text">Fine fine… I should've communicated properly 🥲</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 4: WHAT I SHOULD HAVE DONE -->
+    <section id="should-have-done" class="section reveal-section">
+      <div class="section-container">
+        <div class="section-badge">CORRECTIVE PROTOCOL</div>
+        <h2 class="section-title">What I should've done</h2>
+
+        <div class="protocol-grid">
+          <div class="protocol-card glass-card">
+            <div class="protocol-number">01</div>
+            <h3 class="protocol-heading">Just tell you right away</h3>
+            <p class="protocol-desc">I should've simply told you what happened instead of getting distracted.</p>
+          </div>
+
+          <div class="protocol-card glass-card">
+            <div class="protocol-number">02</div>
+            <h3 class="protocol-heading">Not let it slip the next day</h3>
+            <p class="protocol-desc">When your call came, I should've remembered to reply and clarify everything.</p>
+          </div>
+
+          <div class="protocol-card glass-card">
+            <div class="protocol-number">03</div>
+            <h3 class="protocol-heading">Not activate CID mode 🕵️</h3>
+            <p class="protocol-desc">Because apparently my notifications became the main crime scene 😭</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 5: FINAL APOLOGY -->
+    <section id="final-apology" class="section reveal-section">
+      <div class="section-container">
+        <div class="section-badge">FINAL VERDICT</div>
+        <h2 class="section-title">So yeah… I'm genuinely sorry, Impa. 🥲</h2>
+
+        <div class="final-apology-card glass-card">
+          <p class="apology-line">I should've told you what happened instead of leaving you wondering.</p>
+          <p class="apology-line">Nothing was intentional. I just got distracted, then the next day everything happened and replying about it slipped completely out of my mind.</p>
+          <p class="apology-line">I understand why you got annoyed though.</p>
+          <p class="apology-line bold-line">Next time I'll just tell you instead of making you investigate my notifications like CID 😂🕵️</p>
+        </div>
+
+        <div class="verdict-prompt-area">
+          <h3 class="verdict-question">Case closed? 👀</h3>
+          
+          <div class="verdict-buttons">
+            <button id="verdict-yes" class="btn btn-choice btn-yes">
+              Yes, finally 😭
+            </button>
+            <button id="verdict-no" class="btn btn-choice btn-no">
+              Still investigating 🕵️
+            </button>
+          </div>
+
+          <div id="verdict-response" class="verdict-response-box glass-card hidden" aria-live="polite">
+            <!-- Dynamic response inserted via JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-text">Made with guilt, poor communication, and one very forgetful person 🤦‍♂️</p>
+      
+      <div class="replay-wrapper">
+        <button id="replay-btn" class="btn btn-replay">
+          Replay Investigation 🔄
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
